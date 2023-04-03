@@ -70,17 +70,12 @@
 
 // // ...
 
-
-
-
-
-
 import React, { useState } from "react";
-import PersonalInfo from "./PersonalInfo";
-import SelectYourPlan from "./SelectYourPlan";
-import PickAddOns from "./PickAddOns";
-import FinishUp from "./FinishingUp";
-import { getname } from "../store/AppState";
+import PersonalInfo from "./personalInfo";
+import SelectYourPlan from "./selectYourPlan";
+import PickAddOns from "./pickAddOns";
+import FinishUp from "./finishingUp";
+import { getname } from "../store/appState";
 
 function Form() {
   const [page, setPage] = useState(0);
@@ -97,7 +92,6 @@ function Form() {
     customizeprofile: "",
     arcademonthly: "",
     onlineservice: "",
-    largerstorage: "",
     total: "",
   });
 
@@ -115,7 +109,6 @@ function Form() {
     customizeprofile: "",
     arcademonthly: "",
     onlineservice: "",
-    largerstorage: "",
     total: "",
   });
 
@@ -188,7 +181,7 @@ function Form() {
                 }
 
                 console.log(validationErrors);
-              if (errors === false) {
+                if (errors === false) {
                   setPage((page) => page + 1);
                 }
 
