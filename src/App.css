@@ -136,11 +136,11 @@ body {
 }
 
 .error-input {
-  border-color: red;
+  border-color: blue;
 }
 
 .error-message {
-  color: red;
+  color: blue;
 }
 input {
   border: 2px solid rgb(98, 0, 255);
